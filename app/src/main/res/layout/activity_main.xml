@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <View
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/header_bg">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="LBP Rate"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="393dp"
+        android:layout_below="@+id/header_view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="169dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="LBP Rate Today"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="96dp" />
+
+            <TextView
+                android:layout_width="156dp"
+                android:layout_height="match_parent"
+                android:text="Buy 1 USD at"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/buy"
+                android:layout_width="156dp"
+                android:layout_height="match_parent"
+                android:text="JSON buy"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="161dp"
+                android:layout_height="match_parent"
+                android:text="Sell 1 USD at "
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/sell"
+                android:layout_width="156dp"
+                android:layout_height="match_parent"
+                android:text="JSON sell"
+                android:textSize="25sp"
+                android:textColor="@color/colorBlack"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/updated"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="updated"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="JSON date"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/bottom_bg"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
